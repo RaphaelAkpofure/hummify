@@ -64,4 +64,26 @@ function genres_taxonomy() {
         )
     );
 }
+
 add_action( 'init', 'genres_taxonomy');
+// Function used to automatically create Music Reviews page.
+function create_music_review_pages()
+  {
+   //post status and options
+    $post = array(
+          'comment_status' => 'open',
+          'ping_status' =>  'closed' ,
+          'post_date' => date('Y-m-d H:i:s'),
+          'post_name' => 'music_review',
+          'post_status' => 'publish' ,
+          'post_title' => 'Music Reviews',
+          'post_type' => 'page',
+    );
+    //insert page and save the id
+    $newvalue = wp_insert_post( $post, false );
+    //save the id in the database
+    update_option( 'mrpage', $newvalue );
+  }
+// // Activates function if plugin is activated
+register_activation_hook( __FILE__, 'create_music_review_pages');
+
