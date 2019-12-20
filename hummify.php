@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: My First Plugin
+ * Plugin Name: Hummify
  * Plugin URI: https://www.blizywap.com.ng/hummify
  * Description: Hummify the Ultimate music review plugin for wordpress
  * Version: 1.1.0
@@ -63,6 +63,7 @@ function genres_taxonomy() {
                 'slug' => 'genre',
                 'with_front' => false
             )
+
         )
     );
 }
