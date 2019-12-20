@@ -1,9 +1,11 @@
 <?php
 /**
- * Plugin Name: Hummify
- * Plugin URI: http://www.blizywap.com.ng/hummify
- * Descriptionnew_views The number of views the post has
- *
+ * Plugin Name: My First Plugin
+ * Plugin URI: https://www.blizywap.com.ng/hummify
+ * Description: Hummify the Ultimate music review plugin for wordpress
+ * Version: 1.1.0
+ * Author: Your Name
+ * Author URI: https://www.blizywap.com.ng
  */
 // Register the Custom Music Review Post Type
  
