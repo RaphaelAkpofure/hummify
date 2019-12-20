@@ -7,13 +7,6 @@
  * Author: Raphael Akpofure
  * Author URI: http://www.mywebsite.com
  */
-
-add_action( 'the_content', 'my_thank_you_text' );
-
-function my_thank_you_text ( $content ) {
-    return $content .= '<p>Thank you for reading!</p>';
-}
-
 /**
  * Adds a view to the post being viewed
  *
@@ -56,8 +49,6 @@ function awepop_get_view_count() {
 
    return $current_views;
 }
-echo awepop_get_view_count() . “views”
-
 /**
  * Shows the number of views for a post
  *
